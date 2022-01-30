@@ -1,0 +1,86 @@
+
+.FAQbottom {
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.FAQsub {
+    display: flex;
+    flex-direction: column;
+    margin: 0vh 3vw 5vh 3vw;
+    /* align-items: stretch; */
+}
+
+.FAQsub h1 {
+    color: var(--signupcolor);
+    font-size: 4vw;
+}
+
+.FAQsub label {
+    color: black;
+    background-color: white;
+    border-color: rgb(233, 231, 231);
+    border-style: solid;
+    border-radius: 6px;
+    margin-bottom: 2.5%;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-bottom: 3%;
+    padding-top: 3%;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.FAQsub label:hover {
+    background-color: rgb(233, 231, 231)
+}
+
+.FAQsub label h2 {
+    font-size: 2vw;
+    font-weight: 500;
+}
+
+.FAQsub label input {
+    display: none;
+}
+
+.FAQsub label input:checked ~ p {
+    display: block;
+}
+
+.FAQsub label p {
+    display: none;
+    font-size: 1.5vw;
+}
+
+@media (max-width: 950px) {
+    .FAQsub h1 {
+        font-size: 6vw;
+    }
+    .FAQsub label h2 {
+        font-size: 3vw;
+    }
+    .FAQsub label p {
+        font-size: 2.5vw;
+    }
+}
+
+@media (max-width: 690px) {
+    .FAQsub h1 {
+        font-size: 9vw;
+    }
+    .FAQsub label h2 {
+        font-size: 5vw;
+    }
+    .FAQsub label p {
+        font-size: 5vw;
+    }
+}
+
+.dn {
+    display: none;
+}

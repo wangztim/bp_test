@@ -1,0 +1,291 @@
+/*
+
+#ContactPage {
+    font-family: 'Raleway';
+    width:100%;
+    background-color: white;
+}
+
+.contactTitle{
+    width:100%;
+    height: 20vh;
+    margin-top:90px;
+    align-items:center;
+    display:flex;
+    justify-content:center;
+}
+
+.titleText{
+    font-family: 'Raleway';
+    font-size: 48px;
+    color: black;
+}
+
+.contactContainer{
+    width:100%;
+    display:flex;
+    align-items:center;    
+    justify-content: space-around;
+}
+.contact2{
+    width:100%;
+    padding: 10vh 10vw 10vh 10vw;
+    display:flex;
+}
+
+.components{
+    margin: 10%;
+}
+
+.pictures{
+    align-self: center;
+    flex: 0 0 auto;
+    width: 5vw;
+}
+
+.blue {
+    background-color: #EBF9FA;
+    width:50%;
+    margin-right:2.5vw;
+    margin-left:2.5vw;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.siteText{
+    color: #64C3D8;
+    font-family: 'Raleway';
+    font-size:36px;
+}
+
+.siteDescrip{
+    color: #64C3D8;
+    font-family: 'Raleway';
+    font-size:20px;
+    text-align: center;
+}
+
+.pink {
+    background-color: #F7F1F4;
+    width: 50%;
+    height: 50%;
+    margin-left:2.5vw;
+    margin-right:2.5vw;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.volunteerText{
+    color: #ED97C5;
+    font-family: 'Raleway';
+    font-size:36px;
+}
+
+.volunteerDescrip{
+    color: #ED97C5;
+    font-family: 'Raleway';
+    font-size:20px;
+    text-align: center;
+}
+
+.blueBtn {
+    background-color: #64C3D8;
+    color: white;
+    text-align: center;
+    font-size: 36px;
+    border-radius: 10px;
+    border-color: #64C3D8;
+    padding: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-width: 2px;
+    font-family: 'Raleway'
+}
+
+.pinkBtn {
+    background-color: #ED97C5;
+    color: white;
+    text-align: center;
+    font-size: 36px;
+    border-radius: 10px;
+    border-color: #ED97C5;
+    padding: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-width: 2px;
+    font-family: 'Raleway';
+}
+
+.blueBtn:hover {
+    background-color: #EBF9FA;
+    color: #64C3D8;
+    cursor: pointer;
+}
+
+.pinkBtn:hover {
+    background-color: #F7F1F4;
+    color: #ED97C5;
+    cursor: pointer;
+}
+
+  @media (max-width: 690px) {
+      .blueBtn, .pinkBtn {
+        padding: 5px;
+        margin-bottom: 30px;
+        font-size: 25px;
+      }
+      .contact2 {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-items: start;
+      }
+      .blue, .pink {
+        text-align: center;
+        width: 100vw;
+        padding-bottom: 0%;
+      }
+      .pictures {
+          margin: 0%;
+          height: 9.5vh;
+          width: 12vh;
+          padding: 0%;
+      }
+  }
+
+  */
+
+#contactpage {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactTitle {
+    margin: 0px 0px 3vh 0px;
+    color:var(--darkblue);
+    font-weight: 700;
+    font-size: 5vw;
+}
+
+.contactMain {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.contactBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-self: stretch;
+    width: 40vw;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.contactBox-blue {
+    color: var(--darkblue);
+    background-color: var(--lightblue);
+}
+
+.contactBox-pink {
+    color: var(--darkorange);
+    background-color: var(--lightorange);
+}
+
+.contactBox div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0px 3vw;
+}
+
+.contactBox div h2 {
+    font-size: 3vw;
+}
+
+.contactBox div img {
+    width: 60%;
+}
+
+.contactBox div p {
+    font-size: 2vw;
+    text-align: center;
+    bottom: 0px;
+}
+
+.contactBox button {
+    font-family: Raleway;
+    color: white;
+    text-align: center;
+    font-size: 36px;
+    box-shadow: none;
+    border-radius: 10px;
+    padding: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* border-width: 2px; */
+    margin-top: auto;
+    margin-bottom: 30px;
+}
+
+.contactBox-blue button {
+    background-color: var(--darkblue);
+    border-color: transparent;
+}
+
+.contactBox-blue button:hover {
+    color: #EBF9FA;
+    background-color: var(--darkblue);
+    cursor: pointer;
+}
+
+.contactBox-pink button {
+    background-color: var(--darkorange);
+    border-color: transparent;
+}
+
+.contactBox-pink button:hover {
+    background-color:var(--darkorange);
+    cursor: pointer;
+    color: #F9E7F1;
+}
+
+.boldText{
+    font-weight: bold !important;
+}
+
+@media (max-width: 690px) {
+    .contactTitle {
+        font-size: 9vw;
+    }
+
+    .contactMain {
+        flex-direction: column;
+    }
+
+    .contactBox {
+        width: 100%;
+        height: auto;
+    }
+
+    .contactBox div h2 {
+        font-size: 7vw;
+    }
+    
+    .contactBox div img {
+        width: 10vw;
+        height: 10vw;
+    }
+
+    .contactBox div p {
+        font-size: 5vw;
+    }
+}
+

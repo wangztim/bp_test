@@ -1,0 +1,120 @@
+#homepage {
+    display: flex;
+    height: calc(100vh - 90px);
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+
+#HomePage-gallerydiv {
+    width: 65%;
+    position: relative;
+    bottom: 1vw;
+}
+
+#HomePage-bannerdiv {
+    width: 30%;
+    max-height: 70vh;
+    position: relative;
+    bottom: 1vw;
+}
+
+#HomePage-topbanner {
+    background-color: var(--darkblue);
+    color: white;
+    border-radius: 25px 25px 0px 0px;
+    padding: 15px 0px 15px 0px;
+}
+
+#HomePage-bannerjoinus {
+    font-size: 5vmax;
+    font-weight: 800;
+}
+
+#HomePage-bannerdate {
+    font-size: 2vmax;
+    font-style: italic;
+}
+
+#HomePage-bkdescription {
+    background-color: var(--lightblue);
+    color: var(--darkblue);
+    font-size: 1.3vmax;
+    font-weight: 500;
+    padding: 20px;
+}
+
+.HomePage-signupbutton {
+    padding: 20px;
+    font-size: 2vw;
+    font-weight: 700;
+    color: white;
+}
+
+.HomePage-signupbutton:hover {
+    cursor: pointer;
+}
+
+#signVolunteer {
+    background-color: var(--darkblue);
+
+}
+
+#signSite {
+    background-color: var(--darkorange);
+    border-radius: 0px 0px 25px 25px;
+}
+
+@media (max-width: 950px) {
+    #homepage {
+        height: auto;
+        flex-direction: column;
+    }
+
+    #HomePage-gallerydiv {
+        width: 100%;
+        margin: 30px 0px;
+        bottom: 0px;
+    }
+
+    #HomePage-bannerdiv {
+        width: 100%;
+        max-height: none;
+        bottom: 0px;
+    }
+    
+    #HomePage-bkdescription {
+        background-color: var(--lpink);
+        color: var(--dpink);
+        font-weight: 500;
+        padding: 20px 20vw;
+    }
+    
+    #HomePage-bannerjoinus {
+        font-size: 10vmax;
+    }
+    
+    #HomePage-bannerdate {
+        font-size: 5vmax;
+    }
+    
+    #HomePage-bkdescription {
+        font-size: 3vmax;
+    }
+    
+    .HomePage-signupbutton {
+        font-size: 5vw;
+    }
+}
+
+@media (max-width: 690px) {
+    #HomePage-gallerydiv {
+        width: 100%;
+        margin: 10px 0px 20px 0px;
+    }
+
+    #HomePage-bkdescription {
+        padding: 20px 10vw;
+    }
+}

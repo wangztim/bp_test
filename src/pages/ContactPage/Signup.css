@@ -1,0 +1,299 @@
+/**
+
+#SiteSignup {
+    --signupcolor: #64C3D8;
+}
+
+#VolunteerSignup {
+    --signupcolor: #ED97C5;
+}
+
+.Signup {
+    width: 100%;
+    display: flex;
+    flex-direction: space-between;
+    gap: 5vw;
+}
+
+.signupFormBtn{
+    font-family: Raleway;
+    color: white;
+    text-align: center;
+    font-size: 36px;
+    box-shadow: none;
+    border-radius: 10px;
+    padding: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    border-color: transparent;
+}
+
+.signupBlueBtn {
+    background-color: #64C3D8;
+}
+
+.signupBlueBtn:hover{
+    color: #EBF9FA;
+    background-color: #20b2d3;
+    cursor: pointer;
+}
+
+.volunteerPinkBtn{
+    color: #EBF9FA;
+    background-color: #ED97C5;
+    cursor: pointer;
+}
+
+.volunteerPinkBtn:hover{
+    color: #EBF9FA;
+    background-color: #ef79b8;
+    cursor: pointer;
+}
+
+p {
+    padding-left: 5%;
+}
+
+
+.Signup-left {
+    display: flex;
+    width: 30vw;
+    flex-direction: column;
+    align-items: center;
+    flex: 0 0 auto;
+}
+
+.Signup-left h1 {
+    font-size: 4vw;
+    text-align: center;
+    color: var(--signupcolor);
+}
+
+.Signup-left p {
+    font-size: 2vw;
+    text-align: center;
+    color: var(--signupcolor);
+}
+
+.Signup-right {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.Signup-right h1 {
+    color: var(--signupcolor);
+    font-size: 4vw;
+}
+
+.Signup-right label {
+    color: black;
+    background-color: white;
+    border-color: rgb(233, 231, 231);
+    border-style: solid;
+    border-radius: 6px;
+    margin-bottom: 2.5%;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-bottom: 3%;
+    padding-top: 3%;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.Signup-right label:hover {
+    background-color: rgb(233, 231, 231)
+}
+
+.Signup-right label h2 {
+    font-size: 2vw;
+    font-weight: 500;
+}
+
+.Signup-right label input {
+    display: none;
+}
+
+.Signup-right label input:checked ~ p {
+    display: block;
+}
+
+.Signup-right label p {
+    display: none;
+    font-size: 1.5vw;
+}
+
+@media (max-width: 950px) {
+    .Signup-left h1 {
+        font-size: 6vw;
+    }
+    
+    .Signup-left p {
+        font-size: 3vw;
+    }
+    .Signup-right h1 {
+        font-size: 6vw;
+    }
+    .Signup-right label h2 {
+        font-size: 3vw;
+    }
+    .Signup-right label p {
+        font-size: 2.5vw;
+    }
+}
+
+@media (max-width: 690px) {
+    .Signup {
+        flex-direction: column;
+        align-items: center;
+    }
+    .Signup-left {
+        width: 100%;
+    }
+    .Signup-left h1 {
+        font-size: 10vw;
+    }
+    .Signup-left img {
+        width: 20%;
+    }
+    .Signup-left p {
+        font-size: 5vw;
+    }
+    .Signup-right h1 {
+        font-size: 9vw;
+    }
+    .Signup-right label h2 {
+        font-size: 5vw;
+    }
+    .Signup-right label p {
+        font-size: 5vw;
+    }
+}
+
+/*
+
+.components{
+    margin: 5%;
+}
+
+.box{
+    width:100vw;
+    height:100vh;
+    display:flex; 
+}
+.leftBox{
+    width: 40%;
+    height:100%;
+    background-color: white;
+    margin-top:90px;
+}
+
+.leftText {
+    font-family: 'Raleway';
+    font-size: 48px;
+    color: #64C3D8;
+    text-align: center;
+}
+
+.centerSiteIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leftPicture{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leftDescrip{
+    font-size: 20px; 
+    font-family: 'Raleway';
+    color: #64C3D8;
+    text-align: center;
+}
+
+.rightBox {
+    width: 60%;
+    height:100%;
+    background-color: white;
+    margin-top:90px;
+}
+
+.rightTitle {
+    font-family: 'Raleway';
+    font-size: 48px;
+    color: #64C3D8;
+}
+
+.rightText {
+    font-family: 'Raleway';
+    font-size: 48px;
+    color: #64C3D8;
+}
+
+.faqBtn {
+    color: black;
+    background-color: white;
+    border-color: rgb(233, 231, 231);
+    border-style: solid;
+    border-radius: 6px;
+    font-family: 'Raleway';
+    margin-bottom: 2.5%;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-bottom: 3%;
+    padding-top: 3%;
+    font-size: 30px;
+    width: 80%;
+    cursor: pointer;
+}
+
+:hover.faqBtn {
+    background-color: rgb(233, 231, 231)
+}
+
+@media (max-width: 690px) {
+    .box {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .leftBox {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .leftPicture {
+        height: 10vh;
+        width: 15vw;
+        display: flex;
+        align-items: center;
+    }
+    .leftMobile {
+        display: flex;
+        align-items: center;
+    }
+    .leftDescrip {
+        padding-bottom: 5%;
+    }
+    .leftText {
+        margin: 0%;
+    }
+    .rightBox {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+ }
+
+ */
+ 

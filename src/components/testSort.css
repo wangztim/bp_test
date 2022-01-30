@@ -1,0 +1,58 @@
+.ts-big {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.ts-small {
+    display: flex;
+}
+
+.ts-button {
+    color: var(--darkblue);
+    font-size: 50px;
+    cursor: pointer;
+    border-radius: 25px;
+    border-color: var(--darkblue);
+    border: 5px solid;
+    background-color: white;
+    text-decoration: none;
+    padding: 10px 40px;
+}
+
+.ts-button:hover {
+    color: white;
+    background-color: var(--darkblue);
+}
+
+.ts-button-logout {
+    color: var(--darkorange);
+    font-size: 50px;
+    cursor: pointer;
+    border-radius: 25px;
+    border-color: var(--darkorange);
+    border: 5px solid;
+    background-color: white;
+    text-decoration: none;
+    padding: 10px 40px;
+}
+
+.ts-button-logout:hover {
+    background-color: var(--darkorange);
+}
+
+.ts-button-logout:hover > .ts-button-link {
+    color: white;
+}
+
+.ts-text {
+    font-size: 26px;
+    color: var(--darkblue);
+}
+
+.ts-button-link {
+    color: var(--darkorange);
+    text-decoration: none;
+}

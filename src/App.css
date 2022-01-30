@@ -1,0 +1,48 @@
+* {
+  --darkorange: #F09B2A;
+  --darkblue: #2183cf;
+  --lightorange: #ffe9d4;
+  --lightblue: #e0f5ff;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("./fonts/Raleway/Raleway-VariableFont_wght.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 100 200 300 400 500 600 700 800 900;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("./fonts/Raleway/Raleway-Italic-VariableFont_wght.ttf") format("truetype");
+  font-style: italic;
+  font-weight: 100 200 300 400 500 600 700 800 900;
+}
+
+.App {
+  font-family: "Raleway";
+}
+
+#indexheader > div {
+  padding-top: 90px;
+  margin-top: -90px;
+}
+
+.App-header {
+  margin: 90px auto 30px auto;
+  width: 85%;
+}
+
+@media (max-width: 1000px) {
+  .App-header {
+    width: 90%;
+    margin: 70px auto 30px auto;
+  }
+
+  .App-header > div {
+    padding-top: 70px;
+    margin-top: -70px;
+    margin-bottom: 40px;
+  }
+}
+

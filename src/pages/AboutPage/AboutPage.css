@@ -1,0 +1,89 @@
+.AboutPage {
+    width: 100%;
+    margin: 0px auto 40px auto;
+    overflow-y: hidden;
+}
+
+.FillViewport{
+    display:flex;
+    width:100%;
+    flex-direction: column;
+    gap: 7.5vh;
+}
+
+.HandsOnImpactImg {
+    order: -1;
+}
+
+.FlexParent {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+}
+
+.LeftFlex {
+    flex-direction: column;
+    display: flex;
+    height: auto;
+    width: 55vw;
+    color: var(--darkorange);
+    text-align:left;
+    font-size: 2vw;
+}
+
+.AboutTitle {
+    color: var(--darkorange);
+    font-weight: 700;
+    display: flex;
+    text-align: left;
+    padding-bottom: 25px;
+    font-size: 5vw;
+}
+
+.Description {
+    flex-flow: column wrap;
+}
+
+.RightFlex {
+    height: 100%;
+}
+
+.MobileRight {
+    display: none;
+}
+
+mark.color {
+    color: var(--darkblue);
+    background: none;
+    font-weight: 700;
+}
+
+@media (max-width: 950px) {
+    .AboutTitle {
+        font-size: 6vw;
+    }
+    .HandsOnImpactImg {
+        order: 0;
+    }
+    .LeftFlex {
+        font-size: 3vw;
+    }
+}
+
+@media (max-width: 690px) {
+    .AboutTitle {
+        font-size: 14vw;
+        flex-direction: column;
+        display: flex;
+    }
+    .LeftFlex {
+        font-size: 6vw;
+        width: 90vw;
+    }
+    .MobileRight {
+        display: block;
+    }
+    .DesktopRight {
+        display: none;
+    }
+}

@@ -1,0 +1,11 @@
+.carousel .slide img {
+    height: 70vh;
+    width: auto;
+    object-fit: cover;
+}
+
+@media (max-width: 690px) {
+    .carousel .slide img {
+        height: 50vh;
+    }
+}

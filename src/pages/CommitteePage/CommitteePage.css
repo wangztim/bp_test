@@ -1,0 +1,95 @@
+.cFillViewport{
+    display:flex;
+    width:90%;
+    flex-direction: column;
+    gap: 10vh;
+}
+
+.cHandsOnImpactImg {
+    order: -1;
+}
+
+.cFlexParent {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+}
+
+.cLeftFlex {
+    flex-direction: column;
+    display: flex;
+    height: auto;
+    width: 55vw;
+    color:var(--darkorange);
+    text-align: center;
+    font-size: .5vw;
+}
+
+.cAboutTitle {
+    color:var(--darkorange);
+    font-weight: 700;
+    display: flex;
+    text-align: left;
+    padding-bottom: 25px;
+    font-size: 5vw;
+}
+
+.cRightFlex {
+    height: 100%;
+}
+
+.cMobileRight {
+    display: none;
+}
+
+mark.color {
+    color:var(--darkblue);
+    background: none;
+    font-weight: 700;
+}
+
+@media (max-width: 950px) {
+    .cAboutTitle {
+        font-size: 6vw;
+    }
+    .cHandsOnImpactImg {
+        order: 0;
+    }
+    .cLeftFlex {
+        font-size: 3vw;
+    }
+}
+
+@media (max-width: 690px) {
+    .cAboutTitle {
+        font-size: 14vw;
+        flex-direction: column;
+        display: flex;
+    }
+    .cLeftFlex {
+        font-size: 6vw;
+        width: 90vw;
+    }
+    .cMobileRight {
+        display: block;
+    }
+    .cDesktopRight {
+        display: none;
+    }
+}
+
+.cCommitteePage {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}
+
+.cCommitteesPageTitle {
+    color:var(--darkblue);
+    font-weight: 700;
+    font-size: 5vw;
+    text-align: left;
+    margin-top: 10vh;
+    margin-left: 2%;
+}
