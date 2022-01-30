@@ -1,6 +1,6 @@
 import React from "react";
 import "./NavBar.css";
-import { Link } from "wouter";
+import { Link } from "react-router-dom";
 import bpLogo from "./assets/images/berkeleyprojectlogo.png";
 import CommitteePage from "../../pages/CommitteePage/CommitteePage";
 
@@ -26,24 +26,20 @@ export default function NewNavBar() {
           <div id="navbar-checkboxlabel-three" />
         </div>
       </div>
-      <Link href="/#homepage" onClick={closeMNav}>
+      <Link to="/#homepage" onClick={closeMNav}>
         <img id="navbar-bpLogo" src={bpLogo} alt="Berkeley Project" />
       </Link>
       <div className={`navbar-sidebar ${mNavStatus ? "" : "displaynone"}`}>
-        <a
-          className="navbar-button"
-          href="/#aboutpage"
-          onClick={closeMNav}
-        >
+        <a className="navbar-button" href="/#aboutpage" onClick={closeMNav}>
           About
         </a>
-        <a className="navbar-button" href="/#contactpage" onClick={closeMNav}>
+        <a className="navbar-button" to="/#contactpage" onClick={closeMNav}>
           Contact
         </a>
-        <Link className="navbar-button" href="/committees" onClick={closeMNav}>
+        <Link className="navbar-button" to="/committees" onClick={closeMNav}>
           Committees
         </Link>
-        <Link className="navbar-button" href="/faq" onClick={closeMNav}>
+        <Link className="navbar-button" to="/faq" onClick={closeMNav}>
           FAQ
         </Link>
         <a

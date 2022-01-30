@@ -1,5 +1,5 @@
 import "./ContactPage.css";
-import { Link } from "wouter";
+import { Link } from "react-router-dom";
 import Volunteer from "./Assets/volunteer.svg";
 import Site from "./Assets/site.svg";
 
@@ -18,7 +18,7 @@ export default function ContactPage() {
               volunteer events?
             </p>
           </div>
-          <Link href="/site-signup">
+          <Link to="/site-signup">
             <button type="button">click here!</button>
           </Link>
         </div>
@@ -32,7 +32,7 @@ export default function ContactPage() {
               to the community?
             </p>
           </div>
-          <Link href="/volunteer-signup">
+          <Link to="/volunteer-signup">
             <button type="button">click here!</button>
           </Link>
         </div>

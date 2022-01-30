@@ -1,5 +1,5 @@
 import "./HomePage.css";
-import { Link } from "wouter";
+import { Link } from "react-router-dom";
 import React from "react";
 import HomePageGallery from "./HomePageGallery";
 
@@ -21,12 +21,12 @@ export default function HomePage() {
           cool things whoooooo description. The Berkeley project exists once
           upon a time and we are whoooooooooooo description description.
         </div>
-        <Link href="/volunteer-signup">
+        <Link to="/volunteer-signup">
           <div className="HomePage-signupbutton" id="signVolunteer">
             I&apos;m a volunteer
           </div>
         </Link>
-        <Link href="/site-signup">
+        <Link to="/site-signup">
           <div className="HomePage-signupbutton" id="signSite">
             I&apos;m a site
           </div>

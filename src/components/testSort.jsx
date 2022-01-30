@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "wouter";
+import { Link } from "react-router-dom";
 import axios from "axios";
 import "./testSort.css";
 import { GoogleLogout } from "react-google-login";
@@ -54,7 +54,7 @@ export default function testSort() {
             onClick={renderProps.onClick}
             disabled={renderProps.disabled}
           >
-            <Link href="/dashboard" className="ts-button-link">
+            <Link to="/dashboard" className="ts-button-link">
               Logout
             </Link>
           </button>

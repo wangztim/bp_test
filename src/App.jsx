@@ -1,34 +1,46 @@
 import "./App.css";
 import React from "react";
-import { Route } from "wouter";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage/HomePage";
 import AboutPage from "./pages/AboutPage/AboutPage";
 import CommitteePage from "./pages/CommitteePage/CommitteePage";
 import ContactPage from "./pages/ContactPage/ContactPage";
 import NavBar from "./components/NavBar/NavBar";
 import FAQPage from "./pages/FAQPage/FAQPage";
-import testSort from "./components/testSort";
+import Sort from "./components/testSort";
 import LoginPage from "./pages/LoginPage/LoginPage";
 import { LoginContext } from "./LoginContext";
 
 function Index() {
   return (
     <div id="indexheader">
-      <HomePage />
-      <AboutPage />
-      <ContactPage />
+      <NavBar />
+      <header className="App-header">
+        <HomePage />
+        <AboutPage />
+        <ContactPage />
+      </header>
     </div>
   );
 }
 
-function MainPages() {
+function FAQ() {
   return (
-    <div>
+    <div id="indexheader">
       <NavBar />
       <header className="App-header">
-        <Route path="/" component={Index} />
-        <Route path="/faq" component={FAQPage} />
-        <Route path="/committees" component={CommitteePage} />
+        <FAQPage />
+      </header>
+    </div>
+  );
+}
+
+function Committee() {
+  return (
+    <div id="indexheader">
+      <NavBar />
+      <header className="App-header">
+        <CommitteePage />
       </header>
     </div>
   );
@@ -37,14 +49,26 @@ function MainPages() {
 function App() {
   const [loggedIn, setLoggedIn] = React.useState(false);
   return (
-    <LoginContext.Provider value={{ loggedIn, setLoggedIn }} className="App">
-      <MainPages />c
-      {loggedIn ? (
-        <Route path="/dashboard" component={testSort} />
-      ) : (
-        <Route path="/dashboard" component={LoginPage} />
-      )}
-    </LoginContext.Provider>
+    <HashRouter>
+      <Routes>
+        <Route path="/" element={<Index />} />
+        <Route path="/faq" element={<FAQ />} />
+        <Route path="/committees" element={<Committee />} />
+        <Route
+          path="/dashboard"
+          element={
+            <div>
+              <LoginContext.Provider
+                value={{ loggedIn, setLoggedIn }}
+                className="App"
+              >
+                {loggedIn ? <Sort /> : <LoginPage />}
+              </LoginContext.Provider>
+            </div>
+          }
+        />
+      </Routes>
+    </HashRouter>
   );
 }
 

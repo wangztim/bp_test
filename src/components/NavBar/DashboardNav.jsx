@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "wouter";
+import { Link } from "react-router-dom";
 import "./NavBar.css";
 import bpLogo from "./assets/images/berkeleyprojectlogo.png";
 import { GoogleLogout } from "react-google-login";
@@ -32,18 +32,18 @@ export default function NewNavBar() {
           <div id="navbar-checkboxlabel-three" />
         </div>
       </div>
-      <Link href="/dashboard">
+      <Link to="/dashboard">
         <a href="#homepage" onClick={closeMNav}>
           <img id="navbar-bpLogo" src={bpLogo} alt="Berkeley Project" />
         </a>
       </Link>
       <div className={`navbar-sidebar ${mNavStatus ? "" : "displaynone"}`}>
-        <Link href="/volunteer-edit">
+        <Link to="/volunteer-edit">
           <a className="navbar-button" href="#aboutpage" onClick={closeMNav}>
             Volunteers
           </a>
         </Link>
-        <Link href="/site-edit">
+        <Link to="/site-edit">
           <a
             className="navbar-button"
             href="#committeepage"
@@ -52,7 +52,7 @@ export default function NewNavBar() {
             Sites
           </a>
         </Link>
-        <Link href="/lead-edit">
+        <Link to="/lead-edit">
           <a className="navbar-button" href="#contactpage" onClick={closeMNav}>
             Leads
           </a>
@@ -65,7 +65,7 @@ export default function NewNavBar() {
               onClick={renderProps.onClick}
               disabled={renderProps.disabled}
             >
-              <Link href="/dashboard">
+              <Link to="/dashboard">
                 <a className="navbar-button">Logout</a>
               </Link>
             </button>
