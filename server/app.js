@@ -5,7 +5,7 @@ const indexRouter = require("./index");
 const app = express();
 const port = 8080;
 
-app.use(cors());
+app.use(cors({ origin: ["https://www.berkeleyproject.org/"] }));
 
 // Body-parser setup
 app.use(express.json());

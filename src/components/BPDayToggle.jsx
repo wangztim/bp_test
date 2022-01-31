@@ -5,13 +5,13 @@ export default function BPDayToggle() {
   const [isBPDay, setBPDay] = React.useState(false);
 
   async function toggleBPDay() {
-    axios.post("https://the-berkeley-project-website.appspot.com:8080/server/bpday");
+    axios.post("https://the-berkeley-project-website.uc.r.appspot.com:8080/server/bpday");
     setBPDay(!isBPDay);
   }
 
   useEffect(() => {
     async function checkBPDay() {
-      const res = await axios.get("https://the-berkeley-project-website.appspot.com:8080/server/bpday");
+      const res = await axios.get("https://the-berkeley-project-website.uc.r.appspot.com:8080/server/bpday");
       setBPDay(res.data);
     }
 
