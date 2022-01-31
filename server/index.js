@@ -5,8 +5,8 @@ const Site = require("./classes/Site");
 const Org = require("./classes/Org");
 const Sorter = require("./classes/Sorter");
 
-const creds = require("./keys/bp-creds.json");
-const sheetIds = require("./keys/sheet-ids.json");
+const creds = require("./bp-creds.json");
+const sheetIds = require("./sheet-ids.json");
 
 const router = express.Router();
 const rawFormData = new GSheet(sheetIds.rawFormData);
