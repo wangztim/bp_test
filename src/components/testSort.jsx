@@ -15,7 +15,7 @@ export default function testSort() {
 
   async function sortFormData() {
     try {
-      await axios.post("http://localhost:8000/server/sort-form-data");
+      await axios.post("https://the-berkeley-project-website.appspot.com:8080/server/sort-form-data");
     } catch (err) {
       alert(err);
     }
@@ -23,7 +23,7 @@ export default function testSort() {
 
   async function matchVolunteersToSites() {
     try {
-      await axios.get("http://localhost:8000/server/match-volunteers-to-sites");
+      await axios.get("https://the-berkeley-project-website.appspot.com:8080/server/match-volunteers-to-sites");
     } catch (err) {
       alert(err);
     }

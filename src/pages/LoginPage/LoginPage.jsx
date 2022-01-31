@@ -11,7 +11,7 @@ export default function LoginPage() {
   const [admins, setAdmins] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:8000/server/admins").then((res) => {
+    axios.get("https://the-berkeley-project-website.appspot.com:8080/server/admins").then((res) => {
       setAdmins(res.data);
     });
   }, []);

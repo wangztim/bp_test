@@ -6,7 +6,7 @@ export default function FAQPage() {
   const [isBPDay, setBPDay] = React.useState(null);
   useEffect(() => {
     async function checkBPDay() {
-      const res = await axios.get("http://localhost:8000/server/bpday");
+      const res = await axios.get("https://the-berkeley-project-website.appspot.com:8080/server/bpday");
       setBPDay(res.data);
     }
 
