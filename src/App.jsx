@@ -18,7 +18,6 @@ function Index() {
       <header className="App-header">
         <HomePage />
         <AboutPage />
-        <ContactPage />
       </header>
     </div>
   );
@@ -30,6 +29,17 @@ function FAQ() {
       <NavBar />
       <header className="App-header">
         <FAQPage />
+      </header>
+    </div>
+  );
+}
+
+function Contact() {
+  return (
+    <div id="indexheader">
+      <NavBar />
+      <header className="App-header">
+        <ContactPage />
       </header>
     </div>
   );
@@ -53,6 +63,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Index />} />
         <Route path="/faq" element={<FAQ />} />
+        <Route path="/contactus" element={<Contact />} />
         <Route path="/committees" element={<Committee />} />
         <Route
           path="/dashboard"

@@ -30,12 +30,9 @@ export default function NewNavBar() {
         <img id="navbar-bpLogo" src={bpLogo} alt="Berkeley Project" />
       </Link>
       <div className={`navbar-sidebar ${mNavStatus ? "" : "displaynone"}`}>
-        <a className="navbar-button" href="/#aboutpage" onClick={closeMNav}>
-          About
-        </a>
-        <a className="navbar-button" to="/#contactpage" onClick={closeMNav}>
-          Contact
-        </a>
+        <Link className="navbar-button" to="/contactus" onClick={closeMNav}>
+          Contact Us
+        </Link>
         <Link className="navbar-button" to="/committees" onClick={closeMNav}>
           Committees
         </Link>

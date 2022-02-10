@@ -11,9 +11,13 @@ export default function LoginPage() {
   const [admins, setAdmins] = useState([]);
 
   useEffect(() => {
-    axios.get("https://the-berkeley-project-website.uc.r.appspot.com:8080/server/admins").then((res) => {
-      setAdmins(res.data);
-    });
+    axios
+      .get(
+        "https://the-berkeley-project-website.uc.r.appspot.com/server/admins"
+      )
+      .then((res) => {
+        setAdmins(res.data);
+      });
   }, []);
 
   function Login(user) {

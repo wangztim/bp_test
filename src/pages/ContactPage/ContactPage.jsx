@@ -6,7 +6,6 @@ import Site from "./Assets/site.svg";
 export default function ContactPage() {
   return (
     <div id="contactpage">
-      <h1 className="contactTitle">CONTACT US</h1>
       <div className="contactMain">
         <div className="contactBox contactBox-blue">
           <div>
